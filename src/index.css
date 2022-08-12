@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  background-color: #282c35;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#chart-container { /*contorno do dashboard */
+  width: 800px;
+  height: 450px;
+  border: 1px solid #444a58;
+  margin: 50px auto;
+  padding: 30px 40px 30px 40px;
+}
+
+.value {
+  fill: #fff;
+}
+
+text {
+  font-size: 12px;
+  fill: #8e98a2;
+}
+
+path {
+  stroke: #444a58;
+}
+
+line {
+  stroke: #444a58;
+}
+
+rect {
+  cursor: pointer;
+  fill: #4fc1f7;
+  border-radius: 10px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+.grid .tick line {
+  stroke: #9FAAAE;
+  stroke-opacity: 0.3;
+}
+
+line#limit {
+  stroke: #FED966;
+  stroke-width: 1;
+}
