@@ -3,7 +3,7 @@ import Dashbord from './Dashbord';
 
 class App extends Component {
   render() {
-    //defininto informações do eixo X e Y do Gráfico
+    //definindo informações do eixo X e Y do Gráfico
     const data = [
       {
         xField: "Janeiro",
@@ -23,7 +23,7 @@ class App extends Component {
       },
       {
         xField: "Maio",
-        yField: 57
+        yField: 97
       },
       {
         xField: "Junho",

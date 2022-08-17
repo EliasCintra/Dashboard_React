@@ -1,4 +1,4 @@
-import React, { Component } from 'react';   //exportação da bibliotec D3
+import React, { Component } from 'react';   //exportação da biblioteca D3
 import * as d3 from "d3";
 
 class BarChart extends Component {
@@ -55,12 +55,13 @@ class BarChart extends Component {
             .data(this.props.data)
             .enter()
             .append('rect')
+             //efeito de transição quando o mouse fica sobre
             .on('mouseenter', function (bar, i) {
                 d3.select(this)
                     .transition()
                     .duration(300)
-                    .style('fill', "#afe2fa")
-                    .style('stroke', "#4fc1f7");
+                    .style('fill', "#2e0087")
+                    .style('stroke', "none");
 
                 const y = yAxis(bar.yField);
                 chart.append('line')
@@ -71,11 +72,12 @@ class BarChart extends Component {
                     .attr('y2', y)
 
             })
+            //efeito de transição quando o mouse sai sobre
             .on('mouseleave', function (bar, i) {
                 d3.select(this)
                     .transition()
                     .duration(300)
-                    .style('fill', "#4fc1f7")
+                    .style('fill')
                     .style('stroke', "none");
 
                 chart.selectAll('#limit').remove()
@@ -88,7 +90,6 @@ class BarChart extends Component {
             .attr('height', (s) => this.props.height - yAxis(s.yField) - 160)
             .attr('width', xAxis.bandwidth());
 
-        
         chart.selectAll()       //efeito de texto
             .data(this.props.data)
             .enter()
@@ -119,7 +120,6 @@ class BarChart extends Component {
     render() {
         return <div id="chart-container"></div>
     }
-
 }
 
 export default BarChart;    // exportação do Dashboard

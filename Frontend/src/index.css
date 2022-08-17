@@ -31,7 +31,7 @@ line {
 
 rect {
   cursor: pointer;
-  fill: #4fc1f7;
+  fill: #42109a;
   border-radius: 10px;
 }
 
@@ -50,6 +50,6 @@ rect {
 }
 
 line#limit {
-  stroke: #FED966;
+  stroke: #000000;
   stroke-width: 1;
 }
