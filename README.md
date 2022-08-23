@@ -7,4 +7,4 @@ Dashboard desenvolvido em React
 
 **Back-end:** MongoDB.
 
-<img src="https://github.com/EliasCintra/Dashboard_React/blob/main/Frontend/index.png" alt="Grafico" width=1000 height=500>
+<img src="https://github.com/EliasCintra/Dashboard_React/blob/main/Frontend/index.png" alt="Grafico" width=800 height=350>
